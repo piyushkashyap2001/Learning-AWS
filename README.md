@@ -1,2 +1,2 @@
-# Learning-AWS
-Learning AWS concepts
+# work in progress :)
+
