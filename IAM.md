@@ -1,4 +1,4 @@
-IAM :-
+# IAM :-
 IAM infrastructure includes the following elements:-
    Principal   
    Request 
@@ -14,17 +14,17 @@ IAM user Arn: arn:aws:iam::accountid without hyphen:user/bob
 AWS console signin link:- https://myawsaccountid.signin.aws.amazon.com/console/
 
 Principal:- defines who is going to access aws resources
-Principal can be:- 
+## Principal can be:- 
     -Root user
     -IAM user 
     -Roles/Temporary security tokens
 
-There are three ways that IAM authenticates a principal
+## There are three ways that IAM authenticates a principal
    -username/password
    -IAM user
    -Accesskey/ Session Token
 
-When a principal sends a request via console, cli, sdks or apis include following:-
+## When a principal sends a request via console, cli, sdks or apis include following:-
    -Actions that the principal wants to perform
    -Resources upon which the actions are performed
    -principal information including the environment from which the request was made
@@ -33,7 +33,7 @@ IAM can be accessed using:- console, cli, sdk , api
 Power users are those who have the full access to aws services except IAM users, groups, roles, billing
 
 
-Two types of policies:-
+## Two types of policies:-
   -Identity Based Policies (based on user, role, federated user, application.)
      1)Managed Policy
            A)AWS managed policy:- standalone policies managed by aws.
@@ -41,7 +41,7 @@ Two types of policies:-
      2)Inline policies :- An inline policy is a policy that's embedded in a principal entity (a user, group, or role)—that is, the policy is an inherent part of the principal entity. You can create a policy and embed it in a principal entity, either when you create the principal entity or later.
   -Resource based policies (these policies are attached to resources like s3 bucket)
 
-Identity based policies has following elements:-
+## Identity based policies has following elements:-
    -Effect
    -Service
    -Resource
@@ -52,7 +52,7 @@ Identity based policies has following elements:-
 1 explicit allow will override all implicit deny in the policy
 
 
-Cross account access can be done in two ways:-
+## Cross account access can be done in two ways:-
     -Assuming Roles
     -Resource based policy
 
@@ -60,7 +60,7 @@ Cross account access with a resource based policy has an advantage over a role ,
 
 
 
-STS has multiple apis to request session token (temporary security credentials)
+## STS has multiple apis to request session token (temporary security credentials)
    -AssumeRole
      Who can call:- IAM user or user with existing temporary security credentials
    -AssumeRolewithSAML
@@ -73,7 +73,7 @@ STS has multiple apis to request session token (temporary security credentials)
       Who can call:- IAM users or aws account root user
 
 
-There are two ways to assume a role
+## There are two ways to assume a role
    - Interactively in the IAM console
    - Programmatically with the AWS CLI 
 
@@ -81,7 +81,7 @@ IAM role delegation :- To delegate permission to access a resource you create an
    - permission policy where action & resources the role can assumed are defined.
    - trust policy specifies which trusted accounts are allowed to grant its user permissions to assume the role.
    
-Activity:
+## Activity:
 1. cross account access using roles & resource based policy.
 2. Login to aws management console using login with amazon, google, Facebook , (with/without)cognito    i.e. oidc compliant.
 3. Access any aws service from webpage, or  mobile app using login with amazon, google, Facebook , (with/without)cognito  i.e. oidc compliant.
