@@ -36,9 +36,9 @@ Power users are those who have the full access to aws services except IAM users,
 Two types of policies:-
   -Identity Based Policies (based on user, role, federated user, application.)
      1)Managed Policy
-           A)AWS managed policy
-           B)Customer managed policy 
-     2)Inline policies
+           A)AWS managed policy:- standalone policies managed by aws.
+           B)Customer managed policy:- standalone policies managed by customers.
+     2)Inline policies :- An inline policy is a policy that's embedded in a principal entity (a user, group, or role)—that is, the policy is an inherent part of the principal entity. You can create a policy and embed it in a principal entity, either when you create the principal entity or later.
   -Resource based policies (these policies are attached to resources like s3 bucket)
 
 Identity based policies has following elements:-
