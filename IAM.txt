@@ -80,3 +80,9 @@ There are two ways to assume a role
 IAM role delegation :- To delegate permission to access a resource you create an IAM role that has two policies attached
    - permission policy where action & resources the role can assumed are defined.
    - trust policy specifies which trusted accounts are allowed to grant its user permissions to assume the role.
+   
+Activity:
+1. cross account access using roles & resource based policy.
+2. Login to aws management console using login with amazon, google, Facebook , (with/without)cognito    i.e. oidc compliant.
+3. Access any aws service from webpage, or  mobile app using login with amazon, google, Facebook , (with/without)cognito  i.e. oidc compliant.
+4. Try with saml above 2.
