@@ -1,0 +1,44 @@
+#S3
+
+File size: 0 to 5TB.
+
+##Data consistency model of s3:-
+  - Read after write consistency for PUTS of new objects.
+  - Eventual consistency for overwrite PUTS and deletes.
+
+S3 object:-
+ - key
+ - value
+ - version
+ - metadata
+ - subresources
+     - ACL
+     - torrent
+
+##S3 classes:-
+  - S3 general purpose
+  - S3 Infrequent Access
+  - Reduced Redundancy Storage
+  - Glacier
+
+##S3 charges for:-
+  - storage
+  - requests
+  - storage management pricing
+  - data transfer pricing
+  - transfer accelaration
+
+By default all new buckets are private.
+
+## S3 encryption:-
+  - In transit
+      - SSL/TLS
+  - At rest
+      - Server side encryption
+          - S3 managed keys - SSE-S3
+          - AWS Key Management service SSE-KMS
+          - Server Side Encryption with customer key SSE-C
+      - CLient side encryption
+      
+
+
